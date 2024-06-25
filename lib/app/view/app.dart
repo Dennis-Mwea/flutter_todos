@@ -12,12 +12,12 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RepositoryProvider.value(value: todosRepository, child: _AppView());
+    return RepositoryProvider.value(value: todosRepository, child: const _AppView());
   }
 }
 
 class _AppView extends StatelessWidget {
-  const _AppView({super.key});
+  const _AppView();
 
   @override
   Widget build(BuildContext context) {
