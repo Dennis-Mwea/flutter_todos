@@ -5,5 +5,31 @@
         "description": "Text shown in the AppBar of the Counter Page"
     },
     "todosOverviewAppBarTitle": "",
-    "todosOverviewErrorSnackBarText": ""
+    "todosOverviewErrorSnackBarText": "",
+    "todosOverviewTodoDeletedSnackBarText": "{title}",
+    "@todosOverviewTodoDeletedSnackBarText": {
+        "placeholders": {
+            "title": {
+                "type": "String"
+            }
+        }
+    },
+    "todosOverviewUndoDeletionButtonText": "",
+    "todosOverviewEmptyText": "",
+    "editTodoAddAppBarTitle": "",
+    "editTodoEditAppBarTitle": "",
+    "editTodoSaveButtonTooltip": "",
+    "editTodoTitleLabel": "",
+    "editTodoDescriptionLabel": "",
+    "todosOverviewOptionsTooltip": "",
+    "todosOverviewOptionsMarkAllIncomplete": "Mark all incomplete",
+    "todosOverviewOptionsMarkAllComplete": "Mark all complete",
+    "todosOverviewOptionsClearCompleted": "Clear completed",
+    "todosOverviewFilterTooltip": "",
+    "todosOverviewFilterAll": "",
+    "todosOverviewFilterActiveOnly": "",
+    "todosOverviewFilterCompletedOnly": "",
+    "statsAppBarTitle": "",
+    "statsCompletedTodoCountLabel": "",
+    "statsActiveTodoCountLabel": ""
 }

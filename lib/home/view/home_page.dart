@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_todos/edit_todo/edit_todo.dart';
 import 'package:flutter_todos/home/cubit/home_cubit.dart';
+import 'package:flutter_todos/stats/stats.dart';
 import 'package:flutter_todos/todos_overview/todos_overview.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,17 +23,11 @@ class HomeView extends StatelessWidget {
 
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      body: IndexedStack(
-        index: selectedTab.index,
-        children: const <Widget>[
-          TodosOverviewPage()
-          // , StatsPage()
-        ],
-      ),
+      body: IndexedStack(index: selectedTab.index, children: const <Widget>[TodosOverviewPage(), StatsPage()]),
       floatingActionButton: FloatingActionButton(
+        onPressed: () => Navigator.of(context).push(EditTodoPage.route()),
         key: const Key('homeView_addTodo_floatingActionButton'),
         shape: const CircleBorder(),
-        onPressed: () {},
         child: const Icon(Icons.add),
       ),
       bottomNavigationBar: BottomAppBar(

@@ -31,7 +31,7 @@ class LocalStorageTodosApi extends TodosApi {
   void _init() {
     final todosJson = _getValue(kTodosCollectionKey);
     if (todosJson != null) {
-      final todos = List<Map<String, dynamic>>.from(json.decode(todosJson) as List<Map<String, dynamic>>).map(Todo.fromJson).toList();
+      final todos = List<Map<String, dynamic>>.from(json.decode(todosJson) as List<dynamic>).map(Todo.fromJson).toList();
       _todosStreamControl.add(todos);
     } else {
       _todosStreamControl.add(<Todo>[]);

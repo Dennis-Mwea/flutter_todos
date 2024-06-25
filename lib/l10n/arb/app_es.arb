@@ -5,5 +5,31 @@
         "description": "Texto mostrado en la AppBar de la página del contador"
     },
     "todosOverviewAppBarTitle": "",
-    "todosOverviewErrorSnackBarText": ""
+    "todosOverviewErrorSnackBarText": "",
+    "todosOverviewTodoDeletedSnackBarText": "{title}",
+    "@todosOverviewTodoDeletedSnackBarText": {
+        "placeholders": {
+            "title": {
+                "type": "String"
+            }
+        }
+    },
+    "todosOverviewUndoDeletionButtonText": "",
+    "todosOverviewEmptyText": "",
+    "editTodoAddAppBarTitle": "",
+    "editTodoEditAppBarTitle": "",
+    "editTodoSaveButtonTooltip": "",
+    "editTodoTitleLabel": "",
+    "editTodoDescriptionLabel": "",
+    "todosOverviewOptionsTooltip": "",
+    "todosOverviewOptionsMarkAllIncomplete": "",
+    "todosOverviewOptionsMarkAllComplete": "",
+    "todosOverviewOptionsClearCompleted": "",
+    "todosOverviewFilterTooltip": "",
+    "todosOverviewFilterAll": "",
+    "todosOverviewFilterActiveOnly": "",
+    "todosOverviewFilterCompletedOnly": "",
+    "statsAppBarTitle": "",
+    "statsCompletedTodoCountLabel": "",
+    "statsActiveTodoCountLabel": ""
 }

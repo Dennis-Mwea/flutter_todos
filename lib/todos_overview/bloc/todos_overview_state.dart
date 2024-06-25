@@ -13,7 +13,7 @@ final class TodosOverviewState extends Equatable {
   @override
   List<Object?> get props => [status, todos, filter, lastDeletedTodo];
 
-  Iterable<Todo> get filteredTodos => filter.applyAll(todos);
+  List<Todo> get filteredTodos => filter.applyAll(todos).toList();
 
   TodosOverviewState copyWith(
       {List<Todo> Function()? todos, Todo? Function()? lastDeletedTodo, TodosViewFilter Function()? filter, TodosOverviewStatus Function()? status}) {

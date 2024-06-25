@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class FlutterTodosTheme {
   static ThemeData get light {
     return ThemeData(
-      colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF13B9FF)),
+      primarySwatch: Colors.purple,
+      // colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF13B9FF)),
       appBarTheme: const AppBarTheme(color: Color.fromARGB(255, 117, 208, 247)),
       snackBarTheme: const SnackBarThemeData(behavior: SnackBarBehavior.floating),
     );
